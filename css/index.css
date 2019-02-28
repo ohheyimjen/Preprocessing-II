@@ -171,7 +171,7 @@ img {
 nav {
   display: flex;
   justify-content: flex-end;
-  border-bottom: 1px dashed black;
+  border-bottom: 1.5px dashed lightgray;
 }
 nav a {
   text-decoration: none;
@@ -195,6 +195,7 @@ nav a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 0px;
 }
 .home .content-section .text-content {
   width: 48%;
