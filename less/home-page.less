@@ -1,5 +1,8 @@
 .home {
 
+  @media @mobile {
+    margin: 0 20px;
+  }
   header {
     .flex-column();
      .fun-header {
@@ -70,7 +73,7 @@
       width: 30%;
       margin-bottom: 30px;
       .btn {
-        .custom-btn();
+        .custom-btn(5%, @button-bg, @main-bg);
       }
     }
 
