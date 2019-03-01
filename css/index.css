@@ -1,3 +1,6 @@
+@media (max-width: 500px) {
+  width: 100%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -229,10 +232,21 @@ nav a {
   margin-top: 0px;
   border-top: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .home .content-section .text-content {
   margin-top: 20px;
   width: 48%;
   padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content {
   margin-top: 30px;
@@ -243,10 +257,8 @@ nav a {
   border-radius: 10px;
 }
 @media (max-width: 500px) {
-  .home .content-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .home .content-section .img-content img {
+    width: 100%;
   }
 }
 .home .inverse-content {
@@ -274,15 +286,26 @@ nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-wrap: wrap;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+    margin: 0 auto 30px;
+  }
 }
 .home .content-pick .destination .btn {
   padding: 5%;
   background-color: #17A2B8;
   color: #FFFFFF;
-  border-radius: 15%;
+  border-radius: 15px;
   font-size: 1.5rem;
   text-align: center;
   cursor: pointer;
